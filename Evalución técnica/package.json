@@ -1,0 +1,15 @@
+{
+  "name": "evaluacion",
+  "version": "1.0.0",
+  "description": "evalución técnica en cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run --reporter mochawesome"
+  },
+  "author": "Victoria Zambrano",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.10.0",
+    "mochawesome": "^7.1.3"
+  }
+}

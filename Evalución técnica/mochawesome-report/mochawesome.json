@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-04-21T03:47:40.027Z",
+    "end": "2023-04-21T03:47:54.813Z",
+    "duration": 14786,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "48daab59-d4ee-4913-9402-177a35ab5d99",
+      "title": "",
+      "fullFile": "cypress\\e2e\\e-commerce\\5endpurchase.cy.js",
+      "file": "cypress\\e2e\\e-commerce\\5endpurchase.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7ad13c33-2834-4a7c-93f8-4c797793932a",
+          "title": "End purchase",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Complete the checkout",
+              "fullTitle": "End purchase Complete the checkout",
+              "timedOut": null,
+              "duration": 8394,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Fills username and password correct\ncy.get(\"#user-name\").type(\"standard_user\").should('have.value', \"standard_user\");\ncy.get(\"#password\").type(\"secret_sauce\").should('have.value', \"secret_sauce\");\ncy.get(\"#login-button\").click();\n//should click the first add-to-cart button\ncy.get(\"#add-to-cart-sauce-labs-backpack\").click();\n//should click the second add-to-cart button\ncy.get('[data-test=\"add-to-cart-sauce-labs-bolt-t-shirt\"]').click();\n// should click to view cart\ncy.get('.shopping_cart_link').click();\n// should click to checkout and Complete the form\ncy.get(\"#checkout\").click();\ncy.get(\"#first-name\").type(\"Victoria\").should('have.value', \"Victoria\");\ncy.get(\"#last-name\").type(\"Zambrano\").should('have.value', \"Zambrano\");\ncy.get(\"#postal-code\").type(\"170306\").should('have.value', \"170306\");\ncy.get(\"#continue\").click();\n// should end purchase\ncy.get(\"#finish\").click();\ncy.get(\"#back-to-products\").click();\n// Logout\ncy.get(\"#react-burger-menu-btn\").click();\ncy.get('#logout_sidebar_link').click();",
+              "err": {},
+              "uuid": "b73d2c28-11ca-445f-8299-4b141d48d7ce",
+              "parentUUID": "7ad13c33-2834-4a7c-93f8-4c797793932a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b73d2c28-11ca-445f-8299-4b141d48d7ce"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8394,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}

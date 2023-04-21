@@ -1,0 +1,16 @@
+------------------------------------------------------------------------------------------------------------------
+                                                    | CONCLUSIONES|
+-----------------------------------------------------------------------------------------------------------------
+1. Las pruebas realizadas con Cypress demostraron ser efectivas para verificar el funcionamiento correcto de las funcionalidades implementadas la automatización E2E.
+
+2. Autenticación del usuario: Se realizaron pruebas automatizadas para autenticarse con el usuario "standard_user" y la contraseña "secret_sauce". Se identificaron los campos de entrada de usuario y contraseña en la página de inicio de sesión, y se utilizaron los datos de entrada proporcionados para completar los campos y realizar la autenticación. Se capturaron las salidas obtenidas, que pueden incluir un código de respuesta HTTP exitoso y la confirmación de que el usuario ha iniciado sesión correctamente. Se realizaron pruebas utilizando diferentes combinaciones de datos de entrada, incluyendo casos de error, para asegurarse de que la autenticación del usuario funcione correctamente.
+
+3. Agregar dos productos al carrito: Se realizaron pruebas automatizadas para agregar dos productos al carrito de compra. Se identificaron los productos disponibles en la página, y se utilizó la funcionalidad de agregar productos al carrito. Se capturaron las salidas obtenidas, que pueden incluir confirmaciones de que los productos se han agregado correctamente al carrito. 
+
+4. Visualizar el carrito: Se realizaron pruebas automatizadas para visualizar el contenido del carrito de compra. Se identificaron los elementos de la página que muestran el contenido del carrito, como los productos agregados, los precios, etc. Se capturaron las salidas obtenidas, que pueden incluir los detalles del carrito visualizado. 
+
+5. Completar el formulario de compra: Se realizaron pruebas automatizadas para completar el formulario de compra con los datos necesarios. Se identificaron los campos de entrada necesarios en el formulario de compra y se utilizó la funcionalidad de completar el formulario con los datos de entrada proporcionados. Se capturaron las salidas obtenidas, que pueden incluir confirmaciones de que el formulario se ha completado correctamente. 
+
+6. Finalizar la compra hasta la confirmación: "THANK YOU FOR YOUR ORDER": Se realizaron pruebas automatizadas para finalizar la compra hasta llegar a la confirmación "THANK YOU FOR YOUR ORDER". Se identificaron los elementos de la página que confirman la finalización del pedido, como mensajes de confirmación. Se capturaron las salidas obtenidas, que pueden incluir la confirmación de que el pedido se ha realizado con éxito. Se realizaron pruebas para verificar que el proceso de compra se complete correctamente hasta llegar a la confirmación final.
+
+7. Se realizaron pruebas automatizadas utilizando el flujo de compra especificado en la página https://www.saucedemo.com/ para verificar y validar la funcionalidad del proceso de compra desde la autenticación del usuario, la adición de productos al carrito, la visualización del carrito, el llenado del formulario de compra. 
