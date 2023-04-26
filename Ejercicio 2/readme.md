@@ -13,7 +13,7 @@
 ** Para instalar cypress se requiere ejecutar el siguiente comando:
 	- npm install -save-dev cypress
 ** Para correr las pruebas en cypress ejecuta el siguiente comando: 
-      - npx cypress run --record --key bd300a9a-706b-4fca-81b6-2624d2673590
+        - npx cypress run --record --key bd300a9a-706b-4fca-81b6-2624d2673590
   
 3. Instrucciones para ejecutar los test
 ** Para ejecutar el proyeto debes realizar lo siguiente: 
